@@ -1,11 +1,11 @@
-# Drowsiness Detection TFLite Inference
+# Drowsiness Detection TFLite
 
-This repository provides code for running drowsiness detection inference using a TensorFlow Lite (TFLite) model. The model predicts drowsiness levels from eye state time series data.
+This repository provides code for creating GRU Model for drowsiness detection using a TensorFlow Lite (TFLite). The model predicts drowsiness levels from eye state time series data.
 
 ## Features
 
 - Loads binary eye state data from a CSV file.
-- Runs inference using a pre-trained GRU-based TFLite model.
+- Creating GRU-based TFLite model from loaded dataset.
 - Outputs predicted drowsiness labels for each window of input data.
 - Saves results to a CSV file.
 
