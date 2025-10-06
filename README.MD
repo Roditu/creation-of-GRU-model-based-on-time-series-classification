@@ -62,9 +62,11 @@ pip install tensorflow pandas numpy
    csv_path = r"your_csv_data_path"
    eye_data = pd.read_csv(csv_path, header=None, index_col=False).squeeze("columns").values.astype(np.float32)
 
-   WINDOW_SIZE = 900
+   #Adjust window size based on model need
+   WINDOW_SIZE = 450 
    LABELS = ["0", "1", "2"]
 
+   #Prediction
    predictions_list = []
    for i in range(0, len(eye_data) - WINDOW_SIZE + 1):
        window_data = eye_data[i:i + WINDOW_SIZE].reshape(1, WINDOW_SIZE, 1).astype(np.float32)
